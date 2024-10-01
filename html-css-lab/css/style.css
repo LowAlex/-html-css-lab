@@ -1,0 +1,174 @@
+/* Q#: All the elements have margin of 0 from the top, bottom, left, and right */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+/* Q1. Ensure HTML5 semantic elements are displayed as block for older browsers */
+article, aside, footer, header, nav, section, main, figure, figcaption, hgroup {
+    display: block;
+}
+
+/* Q2. Styling the body */
+body {
+    color: #282626; /* Set your preferred text color */
+    background-image: url('../assets/images/dark-wood1.jpg');
+    background-size: cover; /* Ensure background image covers the whole background */
+    background-repeat: no-repeat; /* Avoid repeating the image */
+    font-family: "Helvetica", "Arial", sans-serif; /* Use 3 options for sans-serif fonts */
+    margin: 0; /* Ensure no margins around the body */
+}
+
+/* Q3. Styling the div with class 'container' */
+.container {
+    width: 950px; /* Set the width to 950px */
+    margin: 5px auto; /* Center the div horizontally and add 5px margin to top and bottom */
+    max-width: 1300px; /* Optionally, set a max-width for larger screens */
+    background-color: #d0b5b5;
+}
+
+/* Q4. Styling the content class */
+.content {
+    line-height: 1.4em;
+    padding: 10px;
+}
+/* Q5. Styling header, nav, and footer */
+header, nav, footer {
+    background-color: #2e2b2b; /* Dark background color */
+    color: #fff; /* Light text color */
+    padding: 10px;
+}
+
+
+/* Q6. Styling the ul inside nav */
+nav ul {
+    margin: 0;
+    padding: 5px;
+    list-style: none; /* Remove default list styling */
+}
+
+/* Q7. Styling the li inside nav */
+nav ul li {
+    display: inline-block; /* Display horizontally */
+    margin-right: 40px; /* 40px margin to the right of each li */
+    text-transform: uppercase; /* All navigation items uppercase */
+}
+
+/* Q8. Pseudo-class effects for anchor tags in the navigation */
+nav ul li a:link {
+    color: #f86503; /* Normal link color */
+    text-decoration: none; /* No underline */
+}
+
+nav ul li a:visited {
+    color: #ff4500; /* Visited link color */
+}
+
+nav ul li a:hover {
+    color: #fd9904; /* Hover link color */
+}
+
+nav ul li a:active {
+    color: #c43302; /* Active link color */
+}
+
+/* Q9. General anchor styling */
+a {
+    color: #0364c5; /* Preferred anchor color */
+    text-decoration: none; /* No underline */
+}
+
+/* Q10. Styling h1, h2, and h3 */
+h1, h2, h3 {
+    margin: 10px;
+    text-transform: uppercase; /* Uppercase letters */
+    color: #f2e2e2; /* Dark color */
+}
+
+/* Q11. Styling the custom class "img-centre" */
+.img-center {
+    display: block; /* Block-level element for margin to work */
+    margin: 5px auto; /* Center image horizontally and add 5px margin for top and bottom */
+    padding: 2px; /* Padding around the image */
+}
+
+/* Q12. Styling audio and video elements */
+audio, video {
+    display: block; /* Block-level element for centering */
+    margin: 10px auto; /* Center and add 10px margin for top and bottom */
+}
+
+/* Q13. Styling table element */
+table {
+    width: 800px; /* Set table width */
+    margin: 10px auto; /* Center table horizontally and add 10px margin for top and bottom */
+    border-collapse: collapse; /* Collapse table borders */
+}
+
+/* Q14. Styling td and th elements */
+td, th {
+    border: 1px solid #000; /* Add border */
+    padding: 2px 5px; /* 2px padding for top/bottom, 5px padding for left/right */
+    background-color: #f0f0f0; /* Light background color */
+}
+
+/* Q15. Styling th and td inside tfoot */
+th, tfoot td {
+    text-transform: uppercase; /* Uppercase text */
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Light text color */
+}
+
+/* Q16. Styling dt element */
+dt {
+    font-weight: bold; /* Make dt bold */
+}
+
+/* Q17. Styling footer element */
+footer {
+    font-size: 80%; /* Font size is 80% of the default body font size */
+    text-align: center; /* Center the text */
+    padding: 1px 0; /* 1px padding for top/bottom, 0 for left/right */
+}
+
+/* Q18. Styling iframe element */
+iframe {
+    display: block; /* Block-level element to center iframe */
+    margin: 10px auto; /* Center iframe horizontally and add 10px margin for top and bottom */
+}
+
+/* Q19. Styling fieldset element */
+fieldset {
+    width: 500px; /* Set width */
+    margin: 20px auto; /* Center fieldset horizontally and add 20px margin for top and bottom */
+    border: 2px solid #000; /* Add border with preferred style */
+    background-color: #e0e0e0; /* Set background color */
+}
+
+/* Q20. Styling the <legend> element */
+legend {
+    font-style: italic; /* Italic font style */
+    color: #fff; /* Text color */
+    background-color: #333; /* Background color */
+    margin: 0 10px; /* 0 margin for top/bottom, 10px for left/right */
+    padding: 0 5px; /* 0 padding for top/bottom, 5px for left/right */
+    border: 2px solid #666; /* Rounded border with your preferred size */
+    border-radius: 10px; /* Rounded corners */
+}
+
+/* Q21. Styling the <input> element with type="submit" */
+input[type="submit"] {
+    border: 2px solid #333; /* Add border */
+    padding: 5px; /* Padding for all sides */
+    background-color: #28a745; /* Background color */
+    color: #fff; /* Text color */
+    cursor: pointer; /* Pointer cursor (like a hand) */
+}
+
+/* Q22. Hover state for <input type="submit"> */
+input[type="submit"]:hover {
+    background-color: #fff; /* Change background on hover */
+    color: #28a745; /* Change text color on hover */
+    cursor: pointer; /* Hand cursor */
+}
